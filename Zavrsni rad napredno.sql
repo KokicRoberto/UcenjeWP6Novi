@@ -4,7 +4,7 @@ go
 drop database if exists LigaLegendi;
 go
 
-create database LigaLegendi;
+create database LigaLegendi collate Croatian_CI_AS;
 go
 
 use LigaLegendi;
