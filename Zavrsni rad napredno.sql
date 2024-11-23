@@ -10,7 +10,7 @@ go
 use LigaLegendi;
 go
 
-create table kostim(
+create table kostimi(
 sifra int not null primary key identity(1,1),
 naziv varchar(50) not null,
 cijena decimal(18,2)null
@@ -20,7 +20,7 @@ create table Legende(
 sifra int not null primary key identity(1,1),
 naziv varchar(50)not null, 
 cijena decimal(18,2)null,
-kostim int not null references kostim(sifra)
+kostim int not null references kostimi(sifra)
 );
 
 create table mape(
