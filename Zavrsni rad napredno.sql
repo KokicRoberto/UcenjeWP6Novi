@@ -29,22 +29,22 @@ naziv varchar(50)not null,
 velicina int not null
 );
 
-insert into kostim (naziv,cijena)
+insert into kostimi (naziv,cijena)
 values('project yasuo', 1300);
 
-insert into kostim (naziv,cijena)
+insert into kostimi (naziv,cijena)
 values ('krvaviyasuo', 1500);
 
-insert into kostim (naziv,cijena)
+insert into kostimi (naziv,cijena)
 values ('Trashuo',999.99);
 
-insert into kostim (naziv,cijena)
+insert into kostimi (naziv,cijena)
 values ('sjenazed',1500);
 
-insert into kostim (naziv,cijena)
+insert into kostimi (naziv,cijena)
 values ('MracniZed',999.99);
 
-insert into kostim (naziv,cijena)
+insert into kostimi (naziv,cijena)
 values ('LudaKatarina',2125);
 
 
