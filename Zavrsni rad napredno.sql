@@ -29,6 +29,11 @@ naziv varchar(50)not null,
 velicina int not null
 );
 
+create table LigaLegendi(
+mape int not null references mape(sifra),
+Legende int not null references legende(sifra)
+);
+
 insert into kostimi (naziv,cijena)
 values('project yasuo', 1300);
 
