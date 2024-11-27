@@ -30,8 +30,8 @@ velicina int not null
 );
 
 create table LigaLegendi(
-mape int not null references mape(sifra),
-Legende int not null references legende(sifra)
+mapa int not null references mape(sifra),
+legenda int not null references legende(sifra)
 );
 
 insert into kostimi (naziv,cijena)
