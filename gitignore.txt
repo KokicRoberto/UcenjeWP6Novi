@@ -1,3 +1,3 @@
 .vs
-Ucenje/bin
-Ucenje/obj
+ Ucenje/bin
+ Ucenje/obj
