@@ -1,3 +1,5 @@
 .vs
- Ucenje/bin
- Ucenje/obj
+Ucenje/bin
+Ucenje/obj
+WebAPI/bit
+WebAPI/obj
