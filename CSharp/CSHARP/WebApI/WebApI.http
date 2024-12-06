@@ -1,6 +1,0 @@
-@WebApI_HostAddress = http://localhost:5083
-
-GET {{WebApI_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
