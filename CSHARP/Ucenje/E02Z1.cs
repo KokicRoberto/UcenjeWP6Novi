@@ -11,7 +11,7 @@
         public static void Izvedi()
         {
 
-            //ovdje se piše rješenje tadatka
+            //ovdje se piše rješenje zadatka
            
 
         }
