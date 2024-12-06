@@ -12,7 +12,7 @@ namespace Ucenje
         public static void Izvedi()
         {
             //Console.WriteLine("Hello");
-        }
+        
         Console.Write("Unesite godine");
         int godine  = int.Parse(Console.ReadLine());
         if (godine >= 18)
@@ -24,7 +24,7 @@ namespace Ucenje
        Console.WriteLine("Maloljetan");
        }
 
-      
+      }
 
     }
 }
