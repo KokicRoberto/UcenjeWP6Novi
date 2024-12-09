@@ -11,7 +11,7 @@ namespace Ucenje
     {
         public static void Izvedi()
         {
-            //Console.WriteLine("Hello");
+            //Console.WriteLine("Hello World");
         
         Console.Write("Unesite godine");
         int godine  = int.Parse(Console.ReadLine());
