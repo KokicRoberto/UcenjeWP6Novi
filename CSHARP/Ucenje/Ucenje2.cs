@@ -19,10 +19,8 @@ namespace Ucenje
             {
                 Console.WriteLine("veće od 0");
             }
-            if (uvjet)
-            {
-                Console.WriteLine("veće od 0");
-            }
+         
+            
             else if (i == -1)
             {
                 Console.WriteLine("-1");
