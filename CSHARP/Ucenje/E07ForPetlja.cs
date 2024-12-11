@@ -67,8 +67,15 @@ namespace Ucenje
             {
                 if (i % 2 == 0)
                 {
-                    //Console.WriteLine(i);
-                    Console.Write("{0},", i);
+                    if (i < 20)
+                    {
+                        //Console.WriteLine(i);
+                        Console.Write("{0},", i);
+                    }
+                    else
+                    {
+                        Console.WriteLine(i);
+                    }
                 }
             }
             // DZ: Maknuti zadnji zarez
@@ -137,6 +144,7 @@ namespace Ucenje
             {
                 Console.WriteLine(new Random().NextInt64() + "" + new Random().NextInt64() + "" + new Random().NextInt64());
                 break; //ovo maknuti ako hoćemo beskonačni prikaz brojeva
+
 
 
             }    
