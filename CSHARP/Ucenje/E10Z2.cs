@@ -10,7 +10,18 @@ namespace Ucenje
     {
         public static void Izvedi()
         {
-            Console.WriteLine("Hello World");
+            //Console.WriteLine("Hello World");
+            int broj = 17;
+            bool prim = true;
+            for(int i = 2; i < broj; i++)
+            {
+                if (b % i == 0)
+                {
+                    prim = false;
+                    //break;
+                }
+            }
+            Console.WriteLine(prim ? "da": "ne");
         }
     }
 }
