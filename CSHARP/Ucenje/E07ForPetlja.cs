@@ -43,7 +43,7 @@ namespace Ucenje
             {
                 for (int j = 1; j <= 10; j++)
                 {
-                    Console.Write("\t{0}", i * j);
+                    Console.Write("\t{0,1}", i * j);
                 }
                 Console.WriteLine();
             }
