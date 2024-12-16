@@ -10,37 +10,51 @@ namespace Ucenje
     {
         public static void Izvedi()
         {
-            //Console.WriteLine("Hello World");
+            Console.WriteLine("E10Z1");
+            Console.Write("Upiši izraz: ");
 
-            Console.WriteLine("Unesi Izraz: ");
             string izraz = Console.ReadLine();
-            Console.WriteLine(izraz);
+
+            Console.WriteLine("Izraz: " + izraz);
+
             if (izraz.Length % 2 == 0)
             {
-                Console.WriteLine("parno");
+                // ako izraz ima parni broj slova
+                Console.Write("Parno");
                 bool palindrom = true;
                 for (int i = 0; i < izraz.Length / 2; i++)
                 {
-                    for (int j = izraz.Length - 1; i > izraz.Length / 2; j--)
+                    if (izraz[i] != izraz[izraz.Length - 1 - i])
                     {
-                        if (izraz[i] != izraz[izraz.Length - 1 - i])
-                        {
-                            palindrom = false;
-                            break;
-                        }
+                        palindrom = false;
+                        break;
                     }
-                    Console.WriteLine(palindrom ? "da" : "ne");
-
-                }else
-                {
-                    Console.WriteLine("neparno");
 
                 }
-                
-
-
+                Console.Write(palindrom ? "da" : "ne");
+            }
+            else
+            {
+                // ako izraz ima neparni broj znakova ( slova )
+                Console.WriteLine("Neparno");
+                bool palindrom = true;
+                for (int i = 0; i <= izraz.Length / 2; i++)
+                    if (izraz.Length % 2 == 0)
+                    {
+                        palindrom = false;
+                        break;
+                    }
+                Console.WriteLine(palindrom ? "da" : "ne");
             }
 
         }
     }
 }
+
+
+
+    
+
+        
+  
+
