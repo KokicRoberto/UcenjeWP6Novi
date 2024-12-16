@@ -15,7 +15,7 @@ namespace Ucenje
             bool prim = true;
             for(int i = 2; i < broj; i++)
             {
-                if (b % i == 0)
+                if (i % i == 0)
                 {
                     prim = false;
                     //break;
