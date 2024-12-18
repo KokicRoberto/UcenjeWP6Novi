@@ -113,7 +113,24 @@ namespace Ucenje
             //return 0;  // kasnije obrisati sluzi da se ne pokazuje greška
         }
 
+        public static string UcitajString(string poruka)
+        {
+            string s = "";
+            while (true)
+            {
+                Console.Write(poruka);
+                s = Console.ReadLine().Trim();
+                if (s.Length == 0)
+                {
+                   Console.WriteLine("Obavezan unos");
+                continue;
+                }
+                return s;
+            }
 
+            
+            }
+          
+        }
 
     }
-}
