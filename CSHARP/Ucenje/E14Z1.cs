@@ -12,7 +12,7 @@ namespace Ucenje
         public static void Izvedi()
         {
             Console.WriteLine("Dobrodosli vjezbanje petkom");
-                Izbornik();
+            Izbornik();
             Console.WriteLine("Hvala na korištenju, doviđenja");
         }
         private static void Izbornik()
@@ -21,13 +21,14 @@ namespace Ucenje
             Console.WriteLine("IZBORNIK");
             Console.WriteLine("1. Parnost broja");
             Console.WriteLine("2. Tablica množenja");
+            Console.WriteLine("3. Jedinica vrjednosti");
             Console.WriteLine("0. Izlaz iz programa");
             OdabirOpcijeIzbornika();
         }
 
         private static void OdabirOpcijeIzbornika()
         {
-            switch (E12Metode.UcitajCijeliBroj("Odaberi stavku izbornika: ", 0,2))
+            switch (E12Metode.UcitajCijeliBroj("Odaberi stavku izbornika: ", 0, 3))
             {
                 case 0:
                     break;
@@ -35,10 +36,22 @@ namespace Ucenje
                     ParnostBroja();
                     Izbornik();
                     break;
-                    case 2:
+                case 2:
                     TablicaMnozenja();
                     Izbornik();
                     break;
+                case 3:
+                    JedinicnaVrijednost();
+                    Izbornik();
+                    break;
+            }
+        }
+
+        private static void JedinicnaVrijednost()
+        {
+            int broj = E12Metode.UcitajCijeliBroj("Unesi broj između 20 i 50: ", 20, 50);
+            {
+                Console.WriteLine(broj % 10);
             }
         }
 
@@ -47,11 +60,11 @@ namespace Ucenje
             NaslovPrograma("Program koji za dane brojeve redaka i stupaca generira tablicu množenja");
             int redak = E12Metode.UcitajCijeliBroj("Unesi broj redaka: ", 2, 10);
             int stupaca = E12Metode.UcitajCijeliBroj("Unesi broj stupaca: ", 2, 10);
-            for (int i = 1; i <=redak; i++)
+            for (int i = 1; i <= redak; i++)
             {
-                for(int j = 1; j<= stupaca; j++)
+                for (int j = 1; j <= stupaca; j++)
                 {
-                    Console.Write("{0,4}", i+j);
+                    Console.Write("{0,4}", i + j);
                 }
                 Console.WriteLine();
             }
@@ -64,7 +77,7 @@ namespace Ucenje
 
             NaslovPrograma("Program koji provjerava da li je uneseni broj paran ili ne");
             int broj = E12Metode.UcitajCijeliBroj("Unesi cijeli broj: ");
-            if(broj % 2 == 0)
+            if (broj % 2 == 0)
             {
                 Console.WriteLine("Uneseni broj {0} je PARAN", broj);
             }
@@ -72,7 +85,7 @@ namespace Ucenje
             {
                 Console.WriteLine("Uneseni broj {0} je NEPARAN", broj);
             }
-            
+
         }
         private static void NaslovPrograma(string naslov)
         {
@@ -91,3 +104,4 @@ namespace Ucenje
         }
     }
 }
+ 
