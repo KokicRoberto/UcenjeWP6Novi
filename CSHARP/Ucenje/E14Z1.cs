@@ -17,16 +17,27 @@ namespace Ucenje
         }
         private static void Izbornik()
         {
+
+            string[] programi = {
+                "Parnost broja",
+                "Tablica množenja",
+                "Jedinicna vrijednosti",
+                "Broj znakova naziva mjesta"
+                
+            };
+
             Console.WriteLine();
             Console.WriteLine("IZBORNIK");
-            Console.WriteLine("1. Parnost broja");
-            Console.WriteLine("2. Tablica množenja");
-            Console.WriteLine("3. Jedinica vrjednosti");
-            Console.WriteLine("0. Izlaz iz programa");
-            OdabirOpcijeIzbornika();
-        }
 
-        private static void OdabirOpcijeIzbornika()
+            for(int i = 0; i < programi.Length; i++)
+            {
+                Console.WriteLine("{0}. {1}", i+1, programi[i]);
+            }
+            Console.WriteLine("0. Izlaz iz programa");
+            OdabirOpcijeIzbornika(programi.Length);
+        }      
+
+        private static void OdabirOpcijeIzbornika(int brojPrograma)
         {
             switch (E12Metode.UcitajCijeliBroj("Odaberi stavku izbornika: ", 0, 3))
             {
@@ -44,7 +55,17 @@ namespace Ucenje
                     JedinicnaVrijednost();
                     Izbornik();
                     break;
+                case 4:
+                    BrojZnakovaNazivMjesta();
+                    Izbornik();
+                    break;
             }
+        }
+
+        private static void BrojZnakovaNazivMjesta()
+        {
+            NaslovPrograma("Za uneseni naziv mjesta ispisuje koliko ima znakova");
+            Console.WriteLine(E12Metode.UcitajString("Unesi ime grada: ").Length);
         }
 
         private static void JedinicnaVrijednost()
