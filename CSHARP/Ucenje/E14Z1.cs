@@ -45,6 +45,18 @@ namespace Ucenje
         private static void TablicaMnozenja()
         {
             NaslovPrograma("Program koji za dane brojeve redaka i stupaca generira tablicu množenja");
+            int redak = E12Metode.UcitajCijeliBroj("Unesi broj redaka: ", 2, 10);
+            int stupaca = E12Metode.UcitajCijeliBroj("Unesi broj stupaca: ", 2, 10);
+            for (int i = 1; i <=redak; i++)
+            {
+                for(int j = 1; j<= stupaca; j++)
+                {
+                    Console.Write("{0,4}", i+j);
+                }
+                Console.WriteLine();
+            }
+
+
         }
 
         private static void ParnostBroja()
@@ -64,12 +76,13 @@ namespace Ucenje
         }
         private static void NaslovPrograma(string naslov)
         {
-            Zvjezdice(naslov.Length);
+            NaglasiNaslov(naslov.Length);
             Console.WriteLine(naslov);
-            Zvjezdice(naslov.Length);
+            NaglasiNaslov(naslov.Length);
         }
-        private static void Zvjezdice(int komada)
+        private static void NaglasiNaslov(int komada)
         {
+            return;
             for (int i = 0; i < komada; i++)
             {
                 Console.Write("-");
