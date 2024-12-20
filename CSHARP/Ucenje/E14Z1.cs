@@ -49,6 +49,7 @@ namespace Ucenje
 
         private static void JedinicnaVrijednost()
         {
+            NaslovPrograma("JedinicnaVrijednost");
             int broj = E12Metode.UcitajCijeliBroj("Unesi broj između 20 i 50: ", 20, 50);
             {
                 Console.WriteLine(broj % 10);
